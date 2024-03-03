@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión en Steam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1b2838;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-image: url('https://steamstore-a.akamaihd.net/public/images/v6/store_logo_icon.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-form {
+            width: 400px;
+            padding: 30px;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-form h2 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            color: #fff;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #777;
+            border-radius: 5px;
+            background-color: #444;
+            color: #fff;
+            font-size: 16px;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 0;
+            background: linear-gradient(to right, #4397ff, #0077ff);
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0077ff;
+        }
+
+        .forgot-password {
+            text-align: center;
+            margin-top: 20px;
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        .forgot-password a {
+            color: #4397ff;
+            text-decoration: none;
+        }
+
+        .remember-me {
+            color: #fff;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .remember-me input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="login-form">
+            <h2><strong>Iniciar sesión</strong></h2>
+            <div class="input-group">
+                <label for="username" style="color: #0077ff;">INICIA SESIÓN CON TU NOMBRE DE CUENTA</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">CONTRASEÑA:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Recordarme</label>
+            </div>
+            <button type="submit">Iniciar sesión</button>
+            <p class="forgot-password">Ayuda, no puedo iniciar sesión <a href="#">Recuperar</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
